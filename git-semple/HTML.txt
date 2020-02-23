@@ -1,2 +1,197 @@
-123
-
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>HTML</title>
+    <style>
+   body {
+    background: #c5bdff; /* Цвет фона */
+   }
+   .colortext {
+     color: blue; /* Синий цвет выделения */
+   }
+   ul.hr {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+   }
+   ul.hr li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+   }
+    </style>
+	</head>
+	<body>
+	<hr align="center" width="100%" size="2" color="#ff0000"/>
+	<h1 align="center"><u>Заголовки h1-h6</u></h1>
+	<h1 style="color:#3d7eff" align="center">Hello World! по центру</h1>
+	<h2 style="color:#94ff42" align="right" >Hello World! справа</h2>
+	<h3 style="color:red" align="left">Hello World! слева</h3>
+	<h4>Hello World!</h4>
+	<h5>Hello World!</h5>
+	<h6 align="justify">justify — выравнивание по ширине (одновременно по правому и левому краю). Это значение работает только для текста, длина которого более, чем одна строка.</h6>
+	<hr align="center" width="100%" size="2" color="#ff0000"/>
+	<h1 align="center"><u>Абзац p</u></h1>
+	<p style="color:#3d7eff" align="center">Hello World!</p>
+	<hr align="center" width="100%" size="2" color="#ff0000"/>
+	<h1 align="center"><u style="color:black">Текст</u></h1>
+	<p><b>Делим пустыню на ряд элементарных участков</b>, размер 
+   которых совпадает с <i>габаритными размерами льва</i>, <br>но при этом меньше размера 
+   клетки.</p>
+   <p style="color:red" align="center">Далее простым перебором <u>определяем участок</u>, в котором находится лев,
+   что <span class="colortext">автоматически приводит к его поимке</span>.</p>
+   <hr align="center" width="100%" size="2" color="#ff0000"/>
+   <h1 align="center"><u>Текст pre</u></h1>
+   <pre> 
+        -1995-
+		
+Бывало, спит у ног собака, 
+костер занявшийся гудит, 
+и женщина из полумрака 
+глазами зыбкими глядит. 
+  
+Потом под пихтою приляжет 
+на куртку рыжую мою 
+и мне, 
+   задумчивая, 
+            скажет: 
+«А ну-ка, спой!..» - 
+                и я пою. 
+	</pre>
+	 <hr align="center" width="100%" size="2" color="#ff0000"/>
+     <h1 align="center"><u>Ссылка и картинка в табличке</u></h1>
+	 <table bgcolor="#92b5ff" width="100%" border="1px" bordercolor=green>
+	 <tbody>
+	 <tr>
+	 <td><p align="center"><a href="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819__340.jpg" target="_blank">Посмотрите на мою фотографию,которая откроется в новом окне!</a></p></td>
+	 <td><p align="center"><a href="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819__340.jpg" target="_self">Посмотрите на мою фотографию,которая откроется в текущем окне!</a></p></td>
+	 <td><p align="center"><img src="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819__340.jpg" width="50%" height="500%"alt="Моя розочка"></p></td>
+	 </tr>
+	 </tbody>
+	 </table>
+	 <hr align="center" width="100%" size="2" color="#ff0000"/>
+	 <h1 align="center"><u style="color:black">Таблица (Объединение ячеек по вертикали и горизонтали)</u></h1>
+<table bgcolor="#92b5ff" align="center" border="1" cellpadding="4" cellspacing="0">
+   <tr>
+    <td rowspan="2">Браузер</td>
+    <th colspan="2">Internet  Explorer</th>
+    <th colspan="3">Opera</th>
+    <th colspan="2">Firefox</th>
+   </tr>
+   <tr>
+    <th>6.0</th><th>7.0</th><th>7.0</th><th>8.0</th><th>9.0</th><th>1.0</th><th>2.0</th>
+   </tr>
+   <tr align="center">
+    <td>Поддерживается</td>
+    <td>Нет</td><td>Да</td><td>Нет</td><td>Да</td><td>Да</td><td>Да</td><td>Да</td>
+   </tr>
+  </table>
+  <hr align="center" width="100%" size="2" color="#ff0000"/>
+  	 <h1 align="center"><u style="color:black">Списки</u></h1>
+	 <table width="100%" border ="1px" bordercolor="green">
+	 <thead>
+	 <tr>
+	 <td colspan="3" bgcolor="#c9b5ff"><h1 align="center">Маркированный список</h1></td>
+	 </tr>
+	 </thead>
+	 <tbody>
+	 <tr>
+	 <td><p>Список с маркерами в виде круга</p></td>
+	 <td><p>Список с маркерами в виде окружности</p></td>
+	 <td><p>Список с квадратными маркерами</p></td>
+	 </tr>
+	 <tr>
+	 <td>
+	 <ul type="disk">
+     <li>Первый пункт</li>
+     <li>Второй пункт</li>
+     <li>Третий пункт</li>
+     </ul>
+	 </td>
+	 <td>
+	 <ul type="circle">
+	 <li>Первый пункт</li>
+     <li>Второй пункт</li>
+     <li>Третий пункт</li>
+	 </ul>
+	 </td>
+	 <td>
+	 <ul type="square">
+	 <li>Первый пункт</li>
+     <li>Второй пункт</li>
+     <li>Третий пункт</li>
+	 </ul>
+	 </td>
+	 </tr>
+	 </tbody>
+	 </table>
+	 <table width="100%" border ="1px" bordercolor="green">
+	 <thead>
+	 <tr>
+	 <td colspan="5" bgcolor="#c9b5ff"><h1 align="center">Нумерованный список</h1></td>
+	 </tr>
+	 </thead>
+	 <tbody>
+	 <tr>
+	 <td><p>Арабские числа</p></td>
+	 <td><p>Прописные буквы латинского алфавита</p></td>
+	 <td><p>Строчные буквы латинского алфавита</p></td>
+	 <td><p>Римские числа в верхнем регистре</p></td>
+	 <td><p>Римские числа в нижнем регистре</p></td>
+	 </tr>
+	 <tr>
+	 <td>
+	 <ol type="1">
+     <li>Первый пункт</li>
+     <li>Второй пункт</li>
+     <li>Третий пункт</li>
+     </0l>
+	 </td>
+	 <td>
+	 <ol type="A">
+	 <li>Первый пункт</li>
+     <li>Второй пункт</li>
+     <li>Третий пункт</li>
+	 </ol>
+	 </td>
+	 <td>
+	 <ol type="a">
+	 <li>Первый пункт</li>
+     <li>Второй пункт</li>
+     <li>Третий пункт</li>
+	 </ol>
+	 </td>
+	  <td>
+	 <ol type="I">
+	 <li>Первый пункт</li>
+     <li>Второй пункт</li>
+     <li>Третий пункт</li>
+	 </ol>
+	 </td>
+	  <td>
+	 <ol type="i">
+	 <li>Первый пункт</li>
+     <li>Второй пункт</li>
+     <li>Третий пункт</li>
+	 </ol>
+	 </td>
+	 </tr>
+	 </tbody>
+	 </table>
+	 <hr align="center" width="100%" size="2" color="#ff0000"/>
+	 <table width="100%" border ="1px" bordercolor="green">
+	 <thead>
+	 <tr>
+	 <td colspan="5" bgcolor="#c9b5ff"><h1 align="center">Горизонтальный список</h1></td>
+	 </tr>
+	 </thead>
+	 </table>
+	 <ul class="hr" align="center">
+     <li>Мчади</li>
+     <li>Када на мацони</li>
+     <li>Пахлава</li>
+     <li>Кчуч</li>
+     <li>Лилибдж</li>
+     </ul>
+	</body>
+</html>
